@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MauiApp1"
+       xmlns:Pages="clr-namespace:MauiApp1.Pages"
+       xmlns:zakladki="clr-namespace:MauiApp1.zakladki"
+       x:Class="MauiApp1.AppShell">
+
+    <!-- Home -->
+    <FlyoutItem Title="Home">
+        <ShellContent Title="MainPage" Route="MainPage">
+            <Pages:MainPage />
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- Hiragana -->
+    <FlyoutItem Title="Hiragana">
+        <ShellContent Title="Hiragana" Route="HiraganaPage">
+            <zakladki:NewPage1/>
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- Katakana -->
+    <FlyoutItem Title="Katakana">
+        <ShellContent Title="Katakana" Route="KatakanaPage">
+            <zakladki:NewPage2 />
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- Hiragana Chars -->
+    <FlyoutItem Title="Hiragana Chars">
+        <ShellContent Title="Hiragana Chars" Route="HiraganaCharsPage">
+            <zakladki:HiraganaChars/>
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- Katakana Chars -->
+    <FlyoutItem Title="Katakana Chars">
+        <ShellContent Title="Katakana Chars" Route="KatakanaCharsPage">
+            <zakladki:KatakanaChars />
+        </ShellContent>
+    </FlyoutItem>
+
+    <!-- View Results -->
+    <FlyoutItem Title="View Results">
+        <ShellContent Title="View Results" Route="ResultsPage">
+            <zakladki:AllUsersPage />
+        </ShellContent>
+    </FlyoutItem>
+
+</Shell>
